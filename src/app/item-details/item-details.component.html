@@ -1,0 +1,24 @@
+
+<div [hidden]="submitted" style="width: 400px;">
+    <button (click)="goToItems()" class="btn btn-info" style="margin-right:10px">back to home</button>
+    <form>
+        <div class="form-group">
+            <label for="name">ItemName</label>
+            <input type="text" class="form-control" id="itemName" required [(ngModel)]="item.itemName" name="itemName">
+        </div>
+    
+        <div class="form-group">
+            <label for="name">ShopName</label>
+            <input type="text" class="form-control" id="status" required [(ngModel)]="item.shopName" name="shopName">
+        </div>
+        <div class="form-group">
+            <label for="name">status</label>
+            <input type="text" class="form-control" id="shopName" required [(ngModel)]="item.status" name="status">
+        </div>
+        <div class="form-group">
+            <label for="name">totalItems</label>
+            <input type="text" class="form-control" id="totalItems" required [(ngModel)]="item.totalItems" name="totalItems">
+        </div>
+        
+    </form>
+    </div>

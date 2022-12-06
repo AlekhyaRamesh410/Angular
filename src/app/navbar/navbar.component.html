@@ -1,0 +1,11 @@
+<nav class="navbar navbar-dark bg-warning" style="width: 900px;">
+          <button [routerLink]="['items']" *ngIf="userStatus" >Home</button>
+          <button  [routerLink]="['add']" *ngIf="userStatus">AddItems</button>
+          <button  [routerLink]="['shops']" *ngIf="userStatus">ShopDetails</button> 
+          <!-- <a [routerLink]="['consumers']" *ngIf="userStatus">consumers</a> -->
+          <button [routerLink]="['login']" *ngIf="!userStatus">Login</button>
+        
+         <a href="#" *ngIf="userStatus" (click)=logout() style="nav-right:align-right;">
+            <span class="nav navbar-nav"></span>Logout</a>
+</nav>
+
